@@ -1,0 +1,172 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.image-container {
+    width: 90rem;
+    height: 100vh;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+p[class=sub-description] {
+    font-weight: normal;
+}
+
+form {
+    max-width: 625px;
+    margin: 2rem;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 40px;
+    padding: 8px 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+
+}
+
+input[type=password] {
+    width: 100%;
+    height: 40px;
+    padding: 8px 10px;
+    margin: 6px 0;
+    box-sizing: border-box;
+    border: 2px solid black;
+    border-radius: 4px;
+
+}
+
+input[type=text]:focus {
+    background-color: #DDDDDD;
+}
+
+input[type=password]:focus {
+    background-color: #DDDDDD;
+}
+
+.form-control.success input {
+    border-color: #2ecc71;
+}
+
+.form-control.error input {
+    border-color: #e74c3c;
+}
+
+a {
+    text-decoration: none;
+    color: #219EBC;
+}
+
+
+label[for=name] {
+    color: #707070;
+}
+
+label[for=email] {
+    color: #707070;
+}
+
+label[for=password] {
+    color: #707070;
+}
+
+
+input[type="checkbox"] {
+    border-radius: 1px;
+}
+
+div[class="error"] {
+    color: red;
+    margin-top: 5px;
+}
+
+button {
+    margin-top: auto;
+    width: 370px;
+    height: 50px;
+    background-color: #FFB703;
+    border-radius: 5px;
+    border: 2px solid #FFB703;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.1s ease;
+}
+
+h1 {
+    font-size: 34px;
+    font-weight: bold;
+}
+
+.sub-description {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+label {
+    font-size: 16px;
+}
+
+span {
+    color: #707070;
+    font-size: 12px;
+}
+
+@media (max-width: 768px) {
+    .image-container {
+        display: none;
+    }
+
+    .form {
+        margin: 1rem;
+        width: 276px;
+    }
+
+    button {
+        width: 200px;
+        height: 36px;
+    }
+
+    h1 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .sub-description {
+        font-size: 16px;
+        font-weight: 400;
+    }
+
+    label {
+        font-size: 14px;
+    }
+
+}
+
+
